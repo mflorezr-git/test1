@@ -17,7 +17,7 @@ namespace ConsoleApp1
                 var rnd=new Random();
             for (int i = 0; i < 10; i++) {
                 var ajuste2 = new Ajuste();
-                ajuste2.Name = 10;
+                ajuste2.Name = "Corriente";
                 ajuste2.Value = rnd.Next(20,50);
                 ajustes.Add(ajuste2);
 
@@ -28,7 +28,6 @@ namespace ConsoleApp1
 
         static void SerializeXML(string fileName, object myObject) {
             XmlSerializer xsSubmit = new XmlSerializer(myObject.GetType());
-            //var subReq = ajustes;
             var xml = "";
 
             using (var sww = new StringWriter())
