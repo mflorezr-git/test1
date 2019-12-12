@@ -12,7 +12,7 @@ namespace ConsoleApp1
             var ajustes = new List<Ajuste>();
             var ajuste1 = new Ajuste();
             ajuste1.Name = "Corriente";
-            ajuste1.Value = 12;
+            ajuste1.Value = 120;
             ajustes.Add(ajuste1);
                 var rnd=new Random();
             for (int i = 0; i < 10; i++) {
@@ -49,5 +49,5 @@ namespace ConsoleApp1
         public int Value;
     }
 
-
+    // Inserto un comentario para ver si el GitHub ya está sincronizando en https
 }
